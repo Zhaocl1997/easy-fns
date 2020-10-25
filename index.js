@@ -1,10 +1,10 @@
-module.exports = module.exports.default = {
+module.exports = {
     ...require('./lib/Array'),
     ...require('./lib/Debounce'),
     ...require('./lib/Math'),
     ...require('./lib/Object'),
     ...require('./lib/Regex'),
-    ...require('./lib/Storage'),
+    // ...require('./lib/Storage'),
     ...require('./lib/Throttle'),
     ...require('./lib/Time'),
     ...require('./lib/Tree'),
