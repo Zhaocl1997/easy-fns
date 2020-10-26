@@ -1,6 +1,10 @@
 module.exports = {
     ...require('./lib/Array'),
+    ...require('./lib/Constant'),
+    ...require('./lib/Copy'),
     ...require('./lib/Debounce'),
+    ...require('./lib/Fibonacci'),
+    ...require('./lib/Log'),
     ...require('./lib/Math'),
     ...require('./lib/Object'),
     ...require('./lib/Regex'),
