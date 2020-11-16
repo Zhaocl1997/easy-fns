@@ -4,7 +4,8 @@
   "description": "Some basic-daily-used functions",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "npx eslint --fix lib/* -f table"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,13 @@
     "utils",
     "throttle",
     "debounce",
-    "regex"
+    "regex",
+    "object",
+    "array"
   ],
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.13.0"
   },
   "config": {
     "commitizen": {
