@@ -9,7 +9,7 @@
     "commit": "cz",
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
     "test": "jest",
-    "lint": "npx eslint --fix lib/* -f table"
+    "lint": "npx eslint --fix lib/* test/* -f table"
   },
   "repository": {
     "type": "git",
