@@ -5,7 +5,9 @@ const {
 	line2Camel,
 	camel2Line,
 	trimSpaceAside,
-	checkStrStrong
+	checkStrStrong,
+	clearIllegalChars,
+	clearUnexpectedChars
 } = require('../lib/string')
 
 
@@ -37,5 +39,17 @@ describe('string utils', () => {
 		expect(checkStrStrong('123abc')).toBe(2)
 		expect(checkStrStrong('123abc!@#')).toBe(3)
 		expect(checkStrStrong('1234abcd!@#$%')).toBe(4)
+	})
+
+	test('clear illegal characters', () => {
+		expect(clearIllegalChars('!1-2+3/', '/')).toBe('!1-2+3')
+		expect(clearIllegalChars('!1-2+3/', ['/', '!'])).toBe('1-2+3')
+		expect(clearIllegalChars('!1-2+3/', ['!', '/', '+', '-'])).toBe('123')
+	})
+
+	test('clear unexpected characters', () => {
+		expect(clearUnexpectedChars('123abc阿松大', 'number')).toBe('123')
+		expect(clearUnexpectedChars('123abc阿松大', 'letter')).toBe('abc')
+		expect(clearUnexpectedChars('123abc阿松大', 'chinese')).toBe('阿松大')
 	})
 })

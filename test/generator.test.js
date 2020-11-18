@@ -5,6 +5,7 @@ const { genEmail, genMAC, genPhone, genPassword, genString } = require('../lib/g
 const { isEmail, isMacAddress, isPhone } = require('../lib/regex')
 
 describe('generator', () => {
+
 	test('generate email and validate', () => {
 		expect(isEmail(genEmail())).toBeTruthy()
 	})
