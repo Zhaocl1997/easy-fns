@@ -3,7 +3,8 @@ module.exports = {
 		'browser': true,
 		'commonjs': true,
 		'es2021': true,
-		'node': true
+		'node': true,
+		'jest/globals': true
 	},
 	'extends': 'eslint:recommended',
 	'parserOptions': {
@@ -27,5 +28,6 @@ module.exports = {
 			'error',
 			'never'
 		]
-	}
+	},
+	'plugins': ['jest']
 }
