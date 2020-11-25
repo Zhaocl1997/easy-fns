@@ -10,7 +10,7 @@
 	clearUnexpectedChars
 } = require('../lib/string') */
 
-import { clearIllegalChars } from '../lib/string.mjs'
+import { clearIllegalChars } from '../lib/string.js'
 
 describe('string utils', () => {
 
