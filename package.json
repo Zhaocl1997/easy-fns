@@ -9,9 +9,11 @@
     "cz": "cz",
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
     "test": "jest",
+    "test:new": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest",
     "cover": "jest --coverage",
     "lint": "npx eslint --fix lib/* test/* -f table"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/Zhaocl1997/easy-fns.git"
