@@ -4,12 +4,8 @@
   "description": "Some basic-daily-used functions",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "ls": "npm ls -depth=0",
-    "cz": "cz",
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
-    "test": "jest",
-    "test:new": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest",
     "cover": "jest --coverage",
     "lint": "npx eslint --fix lib/* test/* -f table"
   },

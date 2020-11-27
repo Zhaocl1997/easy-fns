@@ -1,7 +1,7 @@
 
 'use strict'
 
-const {
+import {
 	isEmpty,
 	isEqual,
 
@@ -10,9 +10,9 @@ const {
 
 	percentToRGB,
 	countAge,
-} = require('../lib/utils')
+} from '../lib/utils'
 
-const { isRGB } = require('../lib/regex')
+import { isRGB } from '../lib/regex'
 
 describe('check value is valid', () => {
 

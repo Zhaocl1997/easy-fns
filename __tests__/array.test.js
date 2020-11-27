@@ -1,7 +1,7 @@
 
 'use strict'
 
-const { getRandomElement, getRandomElements, curryConcat, objectArrayUnique } = require('../lib/array')
+import { getRandomElement, getRandomElements, curryConcat, objectArrayUnique } from '../lib/array'
 
 describe('array utils', () => {
 

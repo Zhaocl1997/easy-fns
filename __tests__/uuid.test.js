@@ -1,14 +1,14 @@
 
 'use strict'
 
-const {
+import {
 	guid,
 	guid2,
 	uuid,
 	uuid2
-} = require('../lib/uuid')
+} from '../lib/uuid'
 
-const { isUUID } = require('../lib/regex')
+import { isUUID } from '../lib/regex'
 
 describe('generate uuid and guid', () => {
 

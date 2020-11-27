@@ -1,11 +1,11 @@
 
 'use strict'
 
-const {
+import {
 	addTimeStamp,
 	addParams,
 	parseParams
-} = require('../lib/url')
+} from '../lib/url'
 
 describe('url utils', () => {
 

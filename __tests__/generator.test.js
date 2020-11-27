@@ -1,8 +1,8 @@
 
 'use strict'
 
-const { genEmail, genMAC, genPhone, genPassword, genString } = require('../lib/generator')
-const { isEmail, isMacAddress, isPhone } = require('../lib/regex')
+import { genEmail, genMAC, genPhone, genPassword, genString } from '../lib/generator'
+import { isEmail, isMacAddress, isPhone } from '../lib/regex'
 
 describe('generator', () => {
 

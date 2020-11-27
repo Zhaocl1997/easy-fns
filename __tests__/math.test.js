@@ -1,7 +1,7 @@
 
 'use strict'
 
-const { getRandomInt, Fibonacci } = require('../lib/math')
+import { getRandomInt, Fibonacci } from '../lib/math'
 
 describe('math utils', () => {
 

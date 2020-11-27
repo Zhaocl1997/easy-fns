@@ -1,7 +1,7 @@
 
 'use strict'
 
-const {
+import {
 	isNull,
 	isArray,
 	isDate,
@@ -15,9 +15,9 @@ const {
 	isClient,
 	isServer,
 	isWindow
-} = require('../lib/type')
+} from '../lib/type'
 
-const { regex } = require('../lib/regex')
+import { regex } from '../lib/regex'
 
 describe('type utils', () => {
 

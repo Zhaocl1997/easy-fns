@@ -1,15 +1,15 @@
-module.exports = {
+export default {
 	'env': {
-		'browser': true,
-		'commonjs': true,
 		'es2021': true,
-		'node': true,
-		'jest/globals': true
+		'jest/globals': true,
+		"shared-node-browser": true
 	},
 	'extends': 'eslint:recommended',
 	'parserOptions': {
-		'ecmaVersion': 12
+		"ecmaVersion": 6,
+		"sourceType": "module",
 	},
+	"parser": "esprima",
 	'rules': {
 		'indent': [
 			'error',
